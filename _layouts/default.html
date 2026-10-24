@@ -22,6 +22,6 @@
     </div>
   </header>
   <main id="main">{{ content }}</main>
-  <footer class="site-footer"><div class="wrap footer-row"><span>© {{ 'now' | date: '%Y' }} {{ site.title | split: '·' | first }}</span><span><a href="https://github.com/">GitHub</a> · <a href="mailto:hello@example.com">Email</a></span></div></footer>
+  <footer class="site-footer"><div class="wrap footer-row"><span>© {{ 'now' | date: '%Y' }} {{ site.title | split: '·' | first }}</span><span><a href="{{ site.github_url }}">GitHub</a> · <a href="{{ site.repository_url }}">博客源码</a></span></div></footer>
 </body>
 </html>
