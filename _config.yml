@@ -1,7 +1,11 @@
-title: 你的名字 · 个人博客
-description: 一个可以持续写作的个人博客
+title: Wone · 个人博客
+description: 用 Markdown 记录学习、网页实践与过程中的想法。
 lang: zh-CN
-timezone: Asia/Singapore
+timezone: Asia/Shanghai
+url: https://corbett092.github.io
+baseurl: ""
+github_url: https://github.com/Corbett092
+repository_url: https://github.com/Corbett092/Corbett092.github.io
 markdown: kramdown
 permalink: /posts/:title/
 exclude:
