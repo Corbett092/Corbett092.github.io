@@ -10,7 +10,6 @@
 - `_layouts/`：文章和页面的 HTML 布局。
 - `_posts/`：博客文章。
 - `assets/style.css`：颜色、排版和响应式样式。
-- `src/plasma.jsx` 与 `package.json`：首页头像的 Plasma UI 效果及其打包配置。
 - `.github/workflows/pages.yml`：GitHub Pages 构建与部署工作流。
 
 ## 新建文章
@@ -34,4 +33,4 @@ tags:
 
 `.github/workflows/pages.yml` 在推送到 `main` 或手动触发时运行 Jekyll 构建并部署到 GitHub Pages。首次设置时，在 GitHub 仓库的 **Settings → Pages** 中将 Source 设为 **GitHub Actions**。之后每次推送到 `main` 都会触发发布。
 
-Jekyll 页面和 Markdown 文章仍由 GitHub Pages 构建。GitHub Actions 会使用 Node.js 22 与 npm 安装固定版本的 Plasma UI、React 和 esbuild，仅将首页头像效果打包为本地 `assets/plasma-ui.js`；不从外部 CDN 加载资源。该构建只在 GitHub Actions 云端运行，本地写文章和改 HTML/CSS 无需安装 Node.js 或 npm。`node_modules/` 和生成的 bundle 不提交到仓库。
+构建在 GitHub Actions 云端执行。本项目不需要 Node.js、npm、前端框架、数据库或本地构建工具。
